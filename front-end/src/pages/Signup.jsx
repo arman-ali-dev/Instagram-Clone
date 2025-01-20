@@ -30,7 +30,7 @@ export default function Signup() {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/api/users/register",
+        "https://arman-instagram.onrender.com/api/users/register",
         user
       );
 

@@ -8,7 +8,7 @@ export default function useGetLatestMessages() {
   const fetchLatestMessages = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8000/api/messages/latest",
+        "https://arman-instagram.onrender.com/api/messages/latest",
         {
           withCredentials: true,
         }

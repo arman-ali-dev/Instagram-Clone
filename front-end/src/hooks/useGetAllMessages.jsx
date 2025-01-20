@@ -10,7 +10,7 @@ export default function useGetAllMessages() {
   const fetchAllMessages = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8000/api/messages/fetch/${selectedUser?._id}`,
+        `https://arman-instagram.onrender.com/api/messages/fetch/${selectedUser?._id}`,
         {
           withCredentials: true,
         }

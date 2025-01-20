@@ -7,9 +7,12 @@ const useGetAllPosts = () => {
   const dispatch = useDispatch();
 
   const fetchAllPosts = async () => {
-    const { data } = await axios.get("http://localhost:8000/api/posts/all", {
-      withCredentials: true,
-    });
+    const { data } = await axios.get(
+      "https://arman-instagram.onrender.com/api/posts/all",
+      {
+        withCredentials: true,
+      }
+    );
 
     dispatch(setPosts(data.posts));
   };

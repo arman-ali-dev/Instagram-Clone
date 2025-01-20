@@ -53,7 +53,7 @@ export default function Asidebar() {
   const handleLogout = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8000/api/users/logout",
+        "https://arman-instagram.onrender.com/api/users/logout",
         { withCredentials: true }
       );
 

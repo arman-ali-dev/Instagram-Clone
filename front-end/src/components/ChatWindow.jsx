@@ -42,7 +42,7 @@ export default function ChatWindow() {
 
     try {
       const { data } = await axios.post(
-        `http://localhost:8000/api/messages/send/${selectedUser._id}`,
+        `https://arman-instagram.onrender.com/api/messages/send/${selectedUser._id}`,
         { text },
         {
           withCredentials: true,

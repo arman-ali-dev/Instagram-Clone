@@ -8,7 +8,7 @@ export default function useGetUserProfile(userID) {
   const fetchUserProfile = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8000/api/users/profile/${userID}`,
+        `https://arman-instagram.onrender.com/api/users/profile/${userID}`,
         {
           withCredentials: true,
         }

@@ -8,8 +8,6 @@ export default function NavBar() {
   );
   const dispatch = useDispatch();
 
-  console.log(unReadCount);
-
   return (
     <>
       <div className="nav-main">

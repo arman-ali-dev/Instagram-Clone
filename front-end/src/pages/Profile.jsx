@@ -17,7 +17,6 @@ export default function Profile() {
   const { userProfile } = useSelector((state) => state.user);
   const { user } = useSelector((state) => state.auth);
   const { posts } = useSelector((state) => state.post);
-  console.log("Posts", posts);
 
   const dispatch = useDispatch();
 

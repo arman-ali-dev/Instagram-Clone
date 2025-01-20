@@ -14,7 +14,6 @@ export default function MiniAsideBar() {
 
   const { user } = useSelector((state) => state.auth);
   const { notifications } = useSelector((state) => state.realTimeNotification);
-  console.log("Notification: ", notifications);
 
   const [showDropDown, setShowDropDown] = useState(false);
   const [showSearchPanel, setShowSearchPanel] = useState(false);

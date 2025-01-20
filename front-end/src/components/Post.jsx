@@ -1,6 +1,5 @@
 import PostCommentsDialog from "./PostCommentsDialog";
 import EmojiPicker from "emoji-picker-react";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import FollowAndDeletePopUp from "./FollowAndDeletePopUp";
 import { useDispatch, useSelector } from "react-redux";

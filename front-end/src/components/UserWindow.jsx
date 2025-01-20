@@ -19,9 +19,12 @@ export default function UserWindow() {
     console.log(id);
 
     try {
-      await axios.delete(`http://localhost:8000/api/messages/drop/${id}`, {
-        withCredentials: true,
-      });
+      await axios.delete(
+        `https://arman-instagram.onrender.com/api/messages/drop/${id}`,
+        {
+          withCredentials: true,
+        }
+      );
 
       const filteredMessages = latestMessages.filter(
         (elem) => elem.senderID !== id || elem.receiverID !== user._id

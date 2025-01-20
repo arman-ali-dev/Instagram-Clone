@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import MainContent from "../components/MainContent";
 import UserSuggetionSection from "../components/UserSuggetionSection";
 import useGetAllPosts from "../hooks/useGetAllPosts";

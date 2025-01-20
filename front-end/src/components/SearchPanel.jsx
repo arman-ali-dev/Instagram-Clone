@@ -58,14 +58,14 @@ export default function SearchPanel({ showSearchPanel, setShowSearchPanel }) {
           </form>
         </div>
 
-        {users.length === 0 ? (
+        {users?.length === 0 ? (
           <div className="search_bottom">
             <h4>Recent</h4>
             <span>No recent searches</span>
           </div>
         ) : (
           <div className="searched_users">
-            {users.map((user) => {
+            {users?.map((user) => {
               return (
                 <Link
                   key={user._id}

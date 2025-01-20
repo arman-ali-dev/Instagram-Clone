@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -28,7 +28,7 @@ export default function Login() {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/api/users/login",
+        "https://arman-instagram.onrender.com/api/users/login",
         user
       );
 

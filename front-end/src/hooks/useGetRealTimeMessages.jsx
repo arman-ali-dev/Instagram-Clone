@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { setLatestMessages, setMessages } from "../redux/chatSlice";
+import { setMessages } from "../redux/chatSlice";
 import { useEffect } from "react";
 
 export default function sueGetRealTimeMessages() {

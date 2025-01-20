@@ -18,9 +18,12 @@ export default function FollowAndDeletePopUp({
 
   const handleDeletePost = async () => {
     try {
-      await axios.delete(`http://localhost:8000/api/posts/delete/${postID}`, {
-        withCredentials: true,
-      });
+      await axios.delete(
+        `https://arman-instagram.onrender.com/api/posts/delete/${postID}`,
+        {
+          withCredentials: true,
+        }
+      );
 
       const filteredPosts = posts.filter((elem) => elem._id !== postID);
 

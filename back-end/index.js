@@ -19,7 +19,7 @@ const auth = require("./middlewares/authMiddleware");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://arman-instagram.onrender.com/",
     credentials: true,
   })
 );

@@ -42,7 +42,7 @@ export default function EditProfile() {
       console.log("removeCurrentProfilePicture", removeCurrentProfilePicture);
 
       const { data } = await axios.patch(
-        "http://localhost:8000/api/users/edit-profile",
+        "https://arman-instagram.onrender.com/api/users/edit-profile",
         formData,
         {
           withCredentials: true,

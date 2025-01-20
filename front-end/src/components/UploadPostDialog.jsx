@@ -1,10 +1,9 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "../redux/postSlice";
 import { setAuthUser } from "../redux/authSlice";
-import { setUserProfile } from "../redux/userSlice";
 
 export default function UploadPostDialog({
   setShowDiscardDialog,
@@ -20,7 +19,6 @@ export default function UploadPostDialog({
   const { posts } = useSelector((state) => state.post);
   console.log(posts);
 
-  const { userProfile } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   const submitHandler = async (e) => {
@@ -32,7 +30,7 @@ export default function UploadPostDialog({
       formData.append("caption", caption);
       formData.append("image", image);
       const { data } = await axios.post(
-        "http://localhost:8000/api/posts/add",
+        "https://arman-instagram.onrender.com/api/posts/add",
         formData,
         {
           withCredentials: true,

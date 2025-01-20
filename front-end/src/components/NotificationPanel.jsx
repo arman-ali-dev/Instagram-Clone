@@ -1,11 +1,7 @@
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import NotificationItem from "./NotificationItem";
 
-export default function NotificationPanel({
-  setShowNotificationPanel,
-  showNotificationPanel,
-}) {
+export default function NotificationPanel({ showNotificationPanel }) {
   const { notifications } = useSelector((state) => state.realTimeNotification);
 
   return (

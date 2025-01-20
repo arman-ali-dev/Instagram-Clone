@@ -27,7 +27,7 @@ const App = () => {
   useEffect(() => {
     let socket;
     if (user) {
-      socket = io("http://localhost:8000", {
+      socket = io("https://arman-instagram.onrender.com", {
         query: {
           userID: user._id,
         },
