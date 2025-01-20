@@ -1,9 +1,7 @@
 const { connect } = require("mongoose");
 
 const connectDB = async () => {
-  const conn = await connect(
-    "mongodb+srv://Armanali:arman5911@instagram.sfjsa.mongodb.net/Instagram"
-  );
+  const conn = await connect(process.env.MONGO_URI);
 
   return conn;
 };
