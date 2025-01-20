@@ -12,7 +12,7 @@ export const handleFollowAndUnfollow = async (
 
   try {
     await axios.post(
-      `http://localhost:8000/api/users/follow/${targetUserID}`,
+      `https://arman-instagram.onrender.com/api/users/follow/${targetUserID}`,
       {},
       {
         withCredentials: true,

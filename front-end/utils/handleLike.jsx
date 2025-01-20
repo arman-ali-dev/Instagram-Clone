@@ -3,7 +3,7 @@ import axios from "axios";
 export const handleLike = async (id, posts, user, dispatch, updatePosts) => {
   try {
     await axios.post(
-      `http://localhost:8000/api/posts/like/${id}`,
+      `https://arman-instagram.onrender.com/api/posts/like/${id}`,
       {},
       {
         withCredentials: true,

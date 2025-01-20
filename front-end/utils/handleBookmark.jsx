@@ -3,7 +3,7 @@ import axios from "axios";
 export const handleBookmark = async (id, user, dispatch, setAuthUser) => {
   try {
     await axios.post(
-      `http://localhost:8000/api/posts/bookmark/${id}`,
+      `https://arman-instagram.onrender.com/api/posts/bookmark/${id}`,
       {},
       {
         withCredentials: true,

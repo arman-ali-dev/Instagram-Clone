@@ -11,7 +11,7 @@ export const commentHandler = async (
 ) => {
   try {
     const { data } = await axios.post(
-      `http://localhost:8000/api/posts/comment/${id}`,
+      `https://arman-instagram.onrender.com/api/posts/comment/${id}`,
       { text: content },
       {
         withCredentials: true,
