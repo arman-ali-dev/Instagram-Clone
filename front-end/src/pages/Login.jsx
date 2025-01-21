@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
-import Cookies from "js-cookie";
 import { useDispatch } from "react-redux";
 import { setAuthUser } from "../redux/authSlice";
 
@@ -31,8 +30,6 @@ export default function Login() {
         "https://arman-instagram.onrender.com/api/users/login",
         user
       );
-
-      Cookies.set("token", data.token, { expires: 30 });
 
       dispatch(setAuthUser(data.user));
       navigate("/");
