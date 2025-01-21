@@ -42,7 +42,9 @@ const handleUserRegister = async (req, res) => {
     });
 
     const token = newUser.generateToken();
-    res.cookie("token", token);
+    res.cookie("token", token, {
+      expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+    });
 
     return res.status(201).json({
       token,
@@ -84,7 +86,9 @@ const handleUserLogin = async (req, res) => {
   }
 
   const token = user.generateToken();
-  res.cookie("token", token);
+  res.cookie("token", token, {
+    expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+  });
 
   return res.status(200).json({
     user: {
